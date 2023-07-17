@@ -1,26 +1,44 @@
-// program for a simple calculator
-
-// take the operator input
-const operator = prompt('Enter operator ( either +, -, * or / ): ');
-
-// take the operand input
-const number1 = parseFloat(prompt('Enter first number: '));
-const number2 = parseFloat(prompt('Enter second number: '));
-
 let result;
 
-// using if...else if... else
-if (operator == '+') {
-    result = number1 + number2;
+function penjumlahan(a, b) {
+  if (operator == "penjumlahan") {
+    result = a + b;
+    return result;
+  }
 }
-else if (operator == '-') {
-    result = number1 - number2;
+function pengurangan(a, b) {
+  if (operator == "penjumlahan") {
+    result = a - b;
+    return result;
+  }
 }
-else if (operator == '*') {
-    result = number1 * number2;
+function perkalian(a, b) {
+  if (operator == "perkalian") {
+    result = a * b;
+    return result;
+  }
 }
-else {
-    result = number1 / number2;
+function pembagian(a, b) {
+  if (operator == "pembagian") {
+    result = a / b;
+    return result;
+  }
 }
-// display the result
-console.log(`${number1} ${operator} ${number2} = ${result}`);
+function pangkat2(a, b) {
+  if (operator == "pangkat2") {
+    result = a ** b;
+    return result;
+  }
+}
+function AkarPangkat2(a) {
+  if (operator == "akar pangkat2") {
+    result = Math.sqrt(a);
+    return result;
+  }
+}
+function AkarPangkat3(a) {
+  if (operator == "akar pangkat3") {
+    result = Math.cbrt(a);
+    return result;
+  }
+}
