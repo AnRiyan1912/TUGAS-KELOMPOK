@@ -19,13 +19,13 @@ const pilihan = prompt('1. Penjumlahan\n2. Pengurangan')
 let result;
 switch(pilihan) {
   case '1':
-    const a = prompt('firstNUmber')
-    const b = prompt('secondNumber')  
+    const a = prompt('Masukkan angka pertama')
+    const b = prompt('Masukkan angka ke dua')  
     function penjumlahan(a, b) {
       return a + b
     }
     alert(penjumlahan(a, b))
-    
+
 }
 
 function pengurangan(a, b) {
